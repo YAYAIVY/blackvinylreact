@@ -101,11 +101,11 @@
 
 .useredit {
   font-size: 21px;
-  margin-bottom: 20px;
 }
-.useredit input,
-select {
-  margin-left: 20px;
+
+td,
+th {
+  padding-bottom: 3px;
 }
 
 .editSave {

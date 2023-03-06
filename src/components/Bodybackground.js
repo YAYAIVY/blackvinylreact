@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 
 function Bodybackground() {
   const background = require('./../../src/images/background1.jpeg')
