@@ -1,12 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import './mApp.css'
-import './all.css'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Bodybackground from "./components/Bodybackground";
-import Memberlistgroup from "./components/Memberlistgroup";
 import MEdit from "./pages/MEdit";
-import Memberinfolist from "./components/Memberinfolist";
+import MHistory from "./pages/MHistory";
+import MCoupon from "./pages/MCoupon";
+import MWishlist from "./pages/MWishlist";
+import MPassword from "./pages/MPassword";
+import CheckOrderList from "./components/CheckOrderList";
+
+
 
 
 function App() {
@@ -15,12 +18,15 @@ function App() {
       <Router>
         <Navbar />
         <Bodybackground />
-        <Memberlistgroup />
-        {/* Memberlistgroup左邊四分區 */}
-        <Memberinfolist />
-        {/* Memberinfolist右上三四個小分類 */}
+        {/* <MEdit/> */}
+        {/* <MCoupon/> */}
         <Routes>
-          <Route path="/MEdit" element={<MEdit />} />
+          <Route path="/MEdit" element={<MEdit/>}/>
+          <Route path="/MCoupon" element={<MCoupon/>}/>
+          <Route path="/MHistory" element={<MHistory/>}/>
+          <Route path="/MWishlist" element={<MWishlist/>}/>
+          <Route path="/MPassword" element={<MPassword/>}/>
+          <Route path="/CheckOrderList" element={<CheckOrderList/>}/>
         </Routes>
       </Router>
     </>
