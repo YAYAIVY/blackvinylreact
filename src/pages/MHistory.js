@@ -26,25 +26,25 @@ function MHistory() {
             </ol>
 
             <div className="memberhistory">
-              <div className="container">
+              <div className="">
 
                 <div className="row">
-                  <div className=" membercoupontitle">
+                  <div className="membercoupontitle">
                     <div className="title col-2 ">訂單編號</div>
                     <div className="title col-8">內容</div>
                     <div className="title col-2">狀態</div>
                   </div>
                 </div>
 
-                <div className="row">
-                  <div className="col orderNumber">
+                <div className="">
+                  <div className="orderNumber">
                     <div className="col-2 ordernamber">
-                        <div><a href="#">#123456789</a></div>
+                        <div><a href="#">#o220001</a></div>
                     </div>
 
 
                     <div className="col-8 orderdetail">
-                        <div>2022/10/19</div> 
+                        <div>2022/03/29</div> 
                         <div className="orderimg">
                         <img alt="product" src="/images/epik_high__sleepless_.jpg"/>                       
                         </div>
@@ -52,15 +52,15 @@ function MHistory() {
                         <div><button className="btn-success">查看</button></div>
                     </div>
 
-                    <div className="col-2 couponstate">
+                    <div className="col-2 MHstatus couponstate">
                       <div>配送中</div>
                     </div>
                   </div>
                 </div> 
-                <div className="row done">
+                <div className=" done">
                   <div className="col orderNumber">
                     <div className="col-2 ordernamber">
-                        <div><a href="/CheckOrderList.js">#123456789</a></div>
+                        <div><a href="/CheckOrderList.js">#o2200100</a></div>
                     </div>
 
 

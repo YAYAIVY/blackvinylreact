@@ -5,9 +5,13 @@ function Bodybackground() {
 
   return (
 
-      <div className="mbg bg-blur">
+
+<div className="mbg bg-blur">
         <img src='images/background1.jpeg' alt="background" />
       </div>
+
+
+
 
   )
 }

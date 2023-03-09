@@ -17,7 +17,7 @@ function Navbar() {
                 <Link className="nav-link" to="/MEdit">會員編輯</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">Link</Link>
+                <Link className="nav-link" to="/MCoupon">MCoupon</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link disabled" to="/">Disabled</Link>

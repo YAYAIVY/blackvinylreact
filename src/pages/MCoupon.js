@@ -25,9 +25,8 @@ function MCoupon() {
               <li className="list-unstyled h3 me-5"><a href="#">已失效</a></li>
               <li className="list-unstyled h3 me-5"><a href="#">未領取</a></li>
             </ol>
-
             <div className="membereditcoupon">
-              <div className="container">
+              <div className="">
 
                 <div className="row">
                   <div className=" membercoupontitle">

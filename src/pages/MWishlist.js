@@ -1,5 +1,5 @@
 import React from "react";
-import {FaTrashAlt ,FaShoppingBag} from "react-icons/fa"
+import {FaTrashAlt ,FaShoppingBag,FaDollarSign} from "react-icons/fa"
 
 function MWishlist() {
     return (
@@ -35,23 +35,14 @@ function MWishlist() {
                         </div>
 
                         <div className="memberEditPage">
-                            <ol className="memberinfolist ms-3 mb-3">
-                                <li className="list-unstyled me-5">
-                                    <button className="btn-tag ">
-                                        <i className="fa-solid fa-bag-shopping me-1"></i>
-                                        全選加入購物車
-                                    </button>
-                                </li>
-                                <li className="list-unstyled me-5">
-                                    <button className="btn-tag">
-                                        <i className="fa-regular fa-trash-can me-1"></i>
-                                        全選刪除商品
-                                    </button>
-                                </li>
-                            </ol>
+                        <ol className="memberinfolist">
+                <li className="list-unstyled h3 me-5"><a href="#/">全選加入</a></li>
+                <li className="list-unstyled h3 me-5"><a href="#/">全選刪除</a></li>
+        
+              </ol>
 
                             <div className="memberhistory">
-                                <div className="container-fluid">
+                                <div className="">
                                     <div className="">
                                         <div className=" wishlisttitle">
                                             <div className="title col-2 ">
@@ -61,10 +52,10 @@ function MWishlist() {
                                                 商品明細
                                             </div>
                                             <div className="title col-2">
-                                                加入購物車
+                                                購買
                                             </div>
                                             <div className="title col-2">
-                                                刪除商品
+                                                刪除
                                             </div>
                                         </div>
                                     </div>
@@ -76,7 +67,7 @@ function MWishlist() {
 
                                             <div className="col-6 wishlistdetail">
                                                 <div className="orderimg">
-                                                    <a href="">
+                                                    <a href="#/">
                                                         <img
                                                             alt="product"
                                                             src="./images/epik_high__sleepless_.jpg"
@@ -90,7 +81,7 @@ function MWishlist() {
                                                     In___________(white vinyl)
                                                 </div>
                                                 <div className="productdetailprice">
-                                                    <i className="fa-solid fa-dollar-sign"></i>
+                                                    <i className="fa-solid fa-dollar-sign"><FaDollarSign/></i>
                                                     3840
                                                 </div>
                                             </div>
@@ -127,7 +118,7 @@ function MWishlist() {
                                                     In___________(white vinyl)
                                                 </div>
                                                 <div className="productdetailprice">
-                                                    <i className="fa-solid fa-dollar-sign"></i>
+                                                    <i className="fa-solid fa-dollar-sign"><FaDollarSign/></i>
                                                     3840
                                                 </div>
                                             </div>
