@@ -1,34 +1,27 @@
+import React from "react";
 import { Link } from 'react-router-dom'
+import { FaBars, FaTimes, FaRegUserCircle, FaShoppingBag } from "react-icons/fa";
 
 function Navbar() {
-  return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">Navbar</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/MEdit">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/MEdit">會員編輯</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/MCoupon">MCoupon</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link disabled" to="/">Disabled</Link>
-              </li>
-            </ul>
-            <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
+  return(
+      <nav>
+        <input type="checkbox" id="check"/>
+        <label htmlFor="check" className="checkbtn">
+        <FaBars/>
+        </label>
+        <label className="logo"><Link to="/index.html"><img src="./img/logo.svg" alt="黑碟" style={{width:'60px',paddingbottom:'10px'}}/></Link></label>
+          <ul>
+              <input type="b-checkbox" id="check"/>
+              <li> <label htmlFor="check" className="checkbtn1"><FaTimes/></label></li>
+              <li><Link to="/index.html">首頁</Link></li>
+              <li><Link to="/">客製化</Link></li>
+              <li><Link to="/">黑膠唱片</Link></li>
+              <li><Link to="/">購物車</Link></li>
+              <li><Link to="/footer">關於我們</Link></li>
+              <li><Link to="/Loginpage">會員登入 <FaRegUserCircle/></Link></li>
+              <li><Link to="/MEdit">編輯</Link></li>
+              <li><Link to="/"><FaShoppingBag/></Link></li>
+          </ul>
       </nav>
   )
 }

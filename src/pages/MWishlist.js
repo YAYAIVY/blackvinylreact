@@ -1,147 +1,68 @@
 import React from "react";
 import {FaTrashAlt ,FaShoppingBag,FaDollarSign} from "react-icons/fa"
+import { Link } from "react-router-dom";
 
 function MWishlist() {
     return (
+        <section className="container-fluid px-5 pb-5">
         <div className="container">
             <div className="row">
-                <div className="col">
-                    <div className="memberpage">
-                        <div className="member-list-group">
-                            <a
-                                href="/MEdit"
-                                className="list-group-item list-group-item-action memberlistgroupitem mb-1"
-                            >
-                                會員資料
-                            </a>
-                            <a
-                                href="/MCoupon"
-                                className="list-group-item list-group-item-action memberlistgroupitem mb-1"
-                            >
-                                優惠劵
-                            </a>
-                            <a
-                                href="/MHistory"
-                                className="list-group-item list-group-item-action memberlistgroupitem mb-1"
-                            >
-                                訂單紀錄
-                            </a>
-                            <a
-                                href="/MWishlist"
-                                className="list-group-item list-group-item-action memberlistgroupitem mb-1"
-                            >
-                                我的收藏
-                            </a>
-                        </div>
+                <div>
+                    <span className="logout"><button>登出</button></span>
 
-                        <div className="memberEditPage">
-                        <ol className="memberinfolist">
-                <li className="list-unstyled h3 me-5"><a href="#/">全選加入</a></li>
-                <li className="list-unstyled h3 me-5"><a href="#/">全選刪除</a></li>
-        
-              </ol>
+                    <div className="memberlistgroup-sm d-lg-none">
+                    <Link to="/MEdit" className="col memberlistgroupitem">個人資料</Link>
+                    <Link to="/MCoupon" className="col memberlistgroupitem lh-sm">優惠劵</Link>
+                    <Link to="/MHistory" className="col memberlistgroupitem">訂單紀錄</Link>
+                    <Link to="/MWishlist" className="col memberlistgroupitem">我的收藏</Link>
+                    </div>
+                    
+                    <div className="memberinfolist d-flex">
+                        <li className="list-unstyled me-1">全選加入</li>
+                    </div>
+                </div>
 
-                            <div className="memberhistory">
-                                <div className="">
-                                    <div className="">
-                                        <div className=" wishlisttitle">
-                                            <div className="title col-2 ">
-                                                加入時間
-                                            </div>
-                                            <div className="title col-6">
-                                                商品明細
-                                            </div>
-                                            <div className="title col-2">
-                                                購買
-                                            </div>
-                                            <div className="title col-2">
-                                                刪除
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="">
-                                        <div className="col wishList">
-                                            <div className="col-2 wishlist">
-                                                <div>2022/10/19</div>
-                                            </div>
-
-                                            <div className="col-6 wishlistdetail">
-                                                <div className="orderimg">
-                                                    <a href="#/">
-                                                        <img
-                                                            alt="product"
-                                                            src="./images/epik_high__sleepless_.jpg"
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="productdetail">
-                                                    EPIK HIGH Sleepless
-                                                    In___________(white
-                                                    vinyl)EPIK HIGH Sleepless
-                                                    In___________(white vinyl)
-                                                </div>
-                                                <div className="productdetailprice">
-                                                    <i className="fa-solid fa-dollar-sign"><FaDollarSign/></i>
-                                                    3840
-                                                </div>
-                                            </div>
-                                            <div className="col-2 wishicon">
-                                                <div>
-                                                   <FaShoppingBag/>
-                                                </div>
-                                            </div>
-                                            <div className="col-2 wishicon">
-                                                <div>
-                                                <FaTrashAlt/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="">
-                                        <div className="col wishList">
-                                            <div className="col-2 wishlist">
-                                                <div>2022/10/19</div>
-                                            </div>
-                                            <div className="col-6 wishlistdetail">
-                                                <div className="orderimg">
-                                                    <a href="">
-                                                        <img
-                                                            alt="product"
-                                                            src="./images/epik_high__sleepless_.jpg"
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="productdetail">
-                                                    EPIK HIGH Sleepless
-                                                    In___________(white
-                                                    vinyl)EPIK HIGH Sleepless
-                                                    In___________(white vinyl)
-                                                </div>
-                                                <div className="productdetailprice">
-                                                    <i className="fa-solid fa-dollar-sign"><FaDollarSign/></i>
-                                                    3840
-                                                </div>
-                                            </div>
-
-                                            <div className="col-2 wishicon">
-                                                <div>
-                                                   <FaShoppingBag/>
-                                                </div>
-                                            </div>
-                                            <div className="col-2 wishicon">
-                                                <div>
-                                                <FaTrashAlt/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div className="memberedit d-flex">
+                    <div className="list-group d-none d-lg-block">
+                    <Link to="/MEdit" className="list-group-item list-group-item-action mb-3">個人資料</Link>
+                    <Link to="/MCoupon" className="list-group-item list-group-item-action mb-3">優惠劵</Link>
+                    <Link to="/MHistory" className="list-group-item list-group-item-action mb-3">訂單紀錄</Link>
+                    <Link to="/MWishlist" className="list-group-item list-group-item-action mb-3">我的收藏</Link>
+                    </div>
+                    <div className="container">
+                        <div className="row">
+                            <table className="table info-editgroup orderList align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">加入時間</th>
+                                        <th scope="col">商品明細</th>
+                                        <th scope="col">加入購物車</th>
+                                        <th scope="col">刪除商品</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" className="ordernamber">
+                                            <div><a href="#/">2022/10/19</a></div>
+                                        </td>
+                                        <td className="orderdetail justify-content-lg-evenly d-lg-flex ">
+                                            <img className="orderimg " alt="product"
+                                                src="./images/epik_high__sleepless_.jpg" />
+                                                <div className="productdetail d-none d-lg-block">EPIK HIGH Sleepless In___________(white
+                                                  vinyl)EPIK HIGH Sleepless In___________(white vinyl)</div> 
+                                                  <div className="productdetailprice ">{FaDollarSign}3840</div>
+                                        </td>
+                                        <td >{FaShoppingBag}</td>
+                                        <td> {FaTrashAlt}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
     );
 }
 

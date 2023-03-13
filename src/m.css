@@ -1,158 +1,106 @@
-.App {
-  text-align: center;
+body {
+  background-color: #2C2E26;
 }
 
-/* member使用css */
-.mbg{
+.menavber{
+  background-color:#2C2E26 ;
+}
+
+
+.mbg {
   width: 100%;
-  min-height: 900px;
-  /* background: url('/public/img/member1.jpeg'); */
+  height: 100%;
+  /* background: url('../public/images/background1.jpeg'); */
   filter: blur(5px);
   background-size: cover;
   position: relative;
 }
 
-.mbg img{
+.mbg img {
   width: 100%;
-  min-height: 900px;
-}
-
-.logoutbutton{
-  float: right;
+  height: 100%;
 }
 
 .memberpage {
   /* 中間全部範圍 */
-  width: auto;
-  height: 100%;
-  display: flex;
+  width: 100%;
+  height: auto;
   justify-content: center;
-  position: absolute; 
-  top:50% ;
-  left:50%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  padding-top: 50px;
-}
-
-.member-list-group {
-  /* 左邊四個 */
-  /* 會員專區(詳細資料、優惠眷)、訂單紀錄、最愛收藏) */
- 
-  margin-top: 50px;
-  margin-right: 10px;
 
 }
 
-.member-list-group a{
-  color: #FFFFFF;
-  border: #7D7D7D solid 1px;
-  background-color: rgba(255, 255, 255, 0.3);
-  /* 調整影響文字亮度勿改 */
-  display: flex;
-  text-align: center;
-  align-items: center;
+.logout {
+  font-size: smaller;
+ /* margin-left: 650px; */
 }
 
-.memberinfolist {
-  /* 上面三個 */
-  /* 會員編輯分類ol,li(詳細資料、密碼、信用卡) */
-  display: flex;
-  margin-bottom: 0px;
+.list-group{
+  /* padding-left:600px; */
 }
 
-.memberinfolist a{
-  color:rgba(255,255,255,0.3);
-  border-bottom:rgba(255,255,255,0.3) solid 1px ;
-}
-.memberinfolist a:hover{
-  color:rgba(255,255,255);
-  border-bottom:rgba(255,255,255) solid 1px ;
-}
-
-.memberlistgroupitem {
-  /* 上面三個個別item */
-  /* 會員專區(詳細資料、優惠眷)、訂單紀錄、最愛收藏) */
-  display: flex;
-  height: 90px;
-  min-width: 150px;
-  align-items: center;
-  justify-content: center;
+.list-group a {
+  width: 150px;
   font-size: 28px;
-}
-
-
-.memberEditPage{
-  min-width: 800px;
-}
-
-.memberedit {
-  /* 霧面區域 */
-  /* 會員編輯頁面(會員等級、編輯詳細資料) */
-  display: flex;
+  font-weight: 900;
+  line-height: 41px;
+  letter-spacing: 0em;
   border: #7D7D7D solid 1px;
   background-color: rgba(255, 255, 255, 0.3);
   /* 調整影響文字亮度勿改 */
   padding-top: 10px;
   color: #ffffff;
+  margin-right: 10px;
+
+}
+
+.memberinfolist {
+ /* padding-left: 800px; */
+}
+
+.memberinfolist a {
+  color: rgba(255, 255, 255, 0.3);
+  border-bottom: #7D7D7D solid 1px;
+  /* 調整影響文字亮度勿改 */
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 41px;
+  letter-spacing: 0em;
+  margin-bottom: 10px;
+}
+
+.memberinfolist a:hover {
+  color: #ffffff;
+  border-bottom: #ffffff solid 1px;
 }
 
 
 
-/* -------會員編輯資料-------- */
 .edittext {
-  /* 會員編輯(右上文字) */
-  display: flex;
-  justify-content: end;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+
 }
 
-.info-editgroup {
-  /* 會員資訊編輯詳細資料 */
-  display: block;
-  align-items: center;
-  min-width: 450px;  
-}
-
-.info-editgroup input,select{
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid lightgrey;
-}
-
-
-.useredit {
-  font-size: 21px;
-}
-
-td,
-th {
-  padding-bottom: 20px;
-}
-
-.editSave {
-  display: flex;
-  justify-content: end;
-}
-
-.editSave button{
-  margin: 10px;
-}
-
+/* -----------會員編輯------------ */
 .myCard {
-  width: 200px;
-  height: 200px;
+  /* width: 100%;
+  height: 100%; */
   text-align: center;
   /* border: 1px solid white; */
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
+  color: #ffffff;
+  /* margin-top: 50px; */
 }
 
 .img-warp {
-  width: 50%;
+  width:200px;
+  height:200px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0px auto 20px;
+
 }
 
 .img-warp img {
@@ -164,470 +112,303 @@ th {
 }
 
 .memberlevel {
-  font-size: 16px;
   background-color: #C6B269;
   border-radius: 10px;
-  display: inline;
-
 }
 
-/* --------會員更改密碼--------- */
-
-.membereditPassword {
-  /* 會員編輯頁面(會員等級、編輯詳細資料) */
-  display: flex;
-  border: #7D7D7D solid 1px;
+.info-editgroup {
+  /* 霧面編輯區塊 */
+  /* color: #ffffff; */
   background-color: rgba(255, 255, 255, 0.3);
-  /* 調整影響文字亮度勿改 */
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-}
-
-.usereditpassword {
-  display: flex;
-  justify-content: center;
+  justify-content:start;
   font-size: 21px;
-  margin-bottom: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0em;
+
+}
+
+.useredit {
+  /* color: #ffffff; */
+  width: 100%;
+  justify-self: center;
+  padding: 10px;
+}
+
+.info-editgroup input {
+  background-color: rgba(255, 255, 255, 0.4);
+  /* color: #ffffff; */
 }
 
 
-.fa-unlock-keyhole{
-  color: #ffffff;
-  margin-right: 10px;
-  font-size: 26px;
+/* -------密碼---------- */
+.passwordeditSave button{
+  width: 100%;
 }
 
-.passwordeditSave {
-  display: flex;
-  justify-content: center;
-}
 
-.btn-success-m {
-  width: 330px;
-  height: 35px; 
-  text-align: center;
-  background-color: #B58686;
-  
-}
+/* ------歷史訂單---------- */
 
-.btn-success-m:hover {
-  color: #FFFFFF;
-  background-color: #893B3B;
-  border-color: #893B3B;
-}
-/* ---------會員信用卡資訊--------- */
-
-.card-editgroup{
-  width: 500px;
-  justify-content: center;
-}
-
-.usereditcard{
-  display: flex;
-  font-size: 21px;
-  margin-bottom: 20px;
-  justify-content:space-between;
-  padding-left: -50px;
-  
-}
-
-.check-info{
-  border-bottom: 1px #FFFFFF solid;
-  padding-bottom: 10px;
-}
-.fa-shield-halved{
-  color: #198754;
-}
-
-/* ----------會員優惠卷----------- */
-.membereditcoupon{
-  display: flex;
-  /* border: #7D7D7D solid 1px;
-  background-color: rgba(255, 255, 255, 0.3); */
-  /* 調整影響文字亮度勿改 */
-  color: #ffffff;
-}
-
-.membercoupontitle{
-  display: flex; 
-  font-size: 28px;
-  min-width:800px ;
-  text-align: center;
-  padding: 0px;
-}
-
-.title{
-  border: 1px solid #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin-left: 0.8px;
-}
-
-.membercoupon{
-  display: flex;
-  padding: 0px;
- 
-}
-
-.membercoupon:hover{
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #000;
-}
-
-.mcoupon{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: 1px #FFFFFF dotted;
-  color: #FF686E;
-  margin-left: 1px;
+.memberinfolist li{
+  color: rgba(255, 255, 255, 0.3);
   font-size: 28px;
   font-weight: 900;
   line-height: 41px;
   letter-spacing: 0em;
+  margin-bottom: 10px;
 }
 
-.discount{
-  font-size: 38px;
-  font-weight: 900;
-  line-height: 55px;
-  letter-spacing: 0em;
-}
-
-.coupondetail{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border:1px #FFFFFF dotted;
-  padding-left: 1px;
-  font-size: 14px;
-
-}
-
-.couponclear{
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 30px;
-}
-
-.couponstate{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 30px;
-  border:1px #FFFFFF dotted;
-  margin-left: 0.6px;
-}
-
-.expired{
-  /* 優惠卷過期 */
-  background-color:gray ;
-  color: #000;
-  opacity: 0.4;
-  pointer-events: none;
-  
-}
-
-/* -------會員歷史訂單----------- */
-.memberhistory{
-  display: flex;
-  /* border: #7D7D7D solid 1px;
-  background-color: rgba(255, 255, 255, 0.3); */
-  /* 調整影響文字亮度勿改 */
+.memberinfolist li:hover{
   color: #ffffff;
 }
 
-.memberhistorytitle{
-  display: flex;
-  min-width:800px ;
-  text-align: center;
-  padding: 0px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0em;
+th,td{
+  border:1px #FFFFFF dotted;
+  padding-left: 1px;
 }
 
-.title{
-  border: 1px solid #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin-left: 0.8px;
-}
-
-.orderNumber{
-  display: flex;
-  padding: 0px;
-}
-
-.orderNumber:hover{
-  background-color: rgba(255, 255, 255, 0.9);
+tr:hover{
+  background-color: rgba(255, 255, 255);
   color: #000;
-  border: 1px solid #101010;
 }
 
-.ordernamber{
-  display: flex;
-  justify-content: center;
+
+.orderList{
   align-items: center;
-  border: 1px #FFFFFF dotted;
-  color: #FF686E;
-  margin-left: 1px;
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 30px;
-  letter-spacing: 0em;
-  width: 200px;
 }
 
 .ordernamber a{
   color: #FF686E;
 }
 
+
+
 .orderdetail{
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  border:1px #FFFFFF dotted;
-  padding-left: 1px;
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 30px;
-  letter-spacing: 0em;
-  padding: 10px 0px;
-  width: 520px;
-
+  justify-content: space-evenly;
 }
-
 .orderimg{
   width: 100px;
-  height: 100px;
-}
 
-.orderimg img{
-  width:100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-.MHstatus{
-  width: 130px;
-}
-
-/* -------會員願望清單--------------- */
-
-.wishlisttitle{
-  display: flex; 
-  font-size: 28px;
-  min-width:800px ;
-  text-align: center;
-  
-}
-
-.wishList{
-  display: flex;
- 
-}
-
-.wishList:hover{
-  background-color: rgba(255, 255, 255,0.9);
-  color: #000;
 }
 
 
-.wishlist{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px #FFFFFF dotted;
-  color: #FF686E;
-  margin-left: 1px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-.wishlistdetail{
-  display: flex;
-  justify-content:space-evenly ;
-  border:1px #FFFFFF dotted;
-  margin-left: 1px;
-  padding: 10px 0px;
-}
-
-.wishlistdetailALINK{
-  display: flex;
-  justify-content:space-evenly ;
-  
-}
-
+/* --------希望清單------------- */
 
 .productdetail{
-  max-width: 250px;
-  max-height: 80px;
-  padding-top: 30px;
-  display:-webkit-box;
+  /* display: -webkit-box;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   white-space: normal;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .productdetailprice{
-  display: flex;
-  align-items: center;
+align-items: center;
 }
 
 .wishicon{
   display: flex;
   align-items: center;
   justify-content: center;
-  border:1px #FFFFFF dotted;
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 30px;
-  letter-spacing: 0em;
-  margin-left: 0.6px;
 }
 
-.wishicon i:hover{
-  font-size: 38px;
-  font-weight: 900;
-  line-height: 55px;
-  letter-spacing: 0em;
-  margin-left: 0.6px;
+.wishicon:hover{
   color: #FF686E;
 }
 
-/* ------訂單明細------------- */
 
-.orderdetaillistpage{
-  background-color: rgba(255, 255, 255,0.9);
-  min-width: 1000px;
-  height: auto;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  
-}
+/* -------優惠劵------------ */
 
-.listTOP{
-  background-color: rgba(255, 255, 255,0.8);
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 41px;
-  letter-spacing: 0em;
-  display: flex;
-  justify-content: space-between;
-}
-
-.boxcenter{
-  /* 要塞在這邊才能置中啦 */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.orderdetaillistInfo{
-  background-color: #E0DDD3;
-  width: 70%;
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 30px;
-  letter-spacing: 0em;
-  margin: 10px 0px;
-
-}
-
-.listContent{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
-  background-color: rgba(255, 255, 255);
-  width: 100%;
-}
-
-.listcontent2{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.orderdetaillistPRODUT{
-  width: 70%;
-}
-
-.orderdetaillistPRODUTimg{
-  width: 50px;
-}
-
-.orderdetaillistPRODUT p{
-  width: 500px;
-  padding-top: 10px;
-  display:-webkit-box;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  white-space: normal;
-  overflow: hidden;
-}
-
-.totalPRICE{
-  width: 70%;
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 30px;
-  letter-spacing: 0em;
-}
-
-.totalprice{
-  text-align: right;
-}
-
-.totalPRICE tfoot{
-  text-align: right;
+.coupon{
+  color: #FF686E;
   font-size: 38px;
   font-weight: 900;
   line-height: 55px;
   letter-spacing: 0em;
 }
 
-.comments{
-  width: 70%;
+/* ------訂單明細---------- */
+.orderdetaillistpage {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.start{
+.listcontent2{
+  background-color: #ffffff;
+}
+
+.listcontent2{
+  background-color:  #E0DDD3;
+}
+
+/* -----評論--------- */
+
+.start {
   font-size: 28px;
   font-weight: 900;
   line-height: 41px;
   letter-spacing: 0em;
-  color:#C6B269
+  color: #C6B269
+}
+.writecomment{
+  
 }
 
-.comments p{
-  width: 500px;
-  padding-top: 10px;
-  display:-webkit-box;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  white-space: normal;
-  overflow: hidden;
+/* ---------下面開始手機板---------------- */
+@media screen and (max-width: 768px) {
+
+
+  .memberpage {
+    /* 中間全部範圍 */
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .logout {
+    font-size: smaller;
+    justify-self: flex-start;
+    margin: 0;
+  }
+
+  .memberlistgroup-sm a {
+    /* 上方四個大類 */
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.3);
+    border-bottom: #7D7D7D solid 1px;
+    /* 調整影響文字亮度勿改 */
+  }
+
+  .memberlistgroup-sm a:hover {
+    color: #ffffff;
+    border-bottom: #ffffff solid 1px;
+  }
+
+  .memberinfolist {
+    /* 下方分類 */
+    padding-left: 0;
+    text-align: start;
+    margin: 10px 0px;
+  }
+
+  .memberinfolist a {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .memberinfolist a:hover {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+
+  .memberedit {
+    /* 霧面編輯區塊 */
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+
+  /* -------手機會員編輯區--------- */
+  .edittext {
+    margin-bottom: 10px;
+  }
+
+  .img-warp {
+    /* 手機板時會員圖片消失 */
+    display: none;
+  }
+
+  .myCard {
+    width: auto;
+    height: auto;
+    text-align: start;
+  }
+
+  .memberlevel {
+    background-color: #C6B269;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    margin-bottom: 5px;
+  }
+
+  label,
+  input {
+    display: block;
+    color: #ffffff;
+    margin-right: 5px;
+
+  }
+
+  input,
+  select {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .subcheck {
+    display: flex;
+    align-items: baseline;
+
+  }
+
+  /* .editSave{
+  text-align: end;
+  margin-bottom: 10px;
+} */
+
+  /* -----密碼------ */
+  .usereditpassword {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .passwordeditSave button {
+    width: 100%;
+    /* margin-top: 10px; */
+
+  }
+
+/* -------歷史訂單--------- */
+
+.memberinfolist li{
+color: rgba(255, 255, 255, 0.3);
 }
 
-.leavecomment{
-  display: flex;
-align-items: center;
+.memberinfolist li:hover{
+  color: #ffffff;
 }
 
-.leavecomment button{
-  font-size: 21px;
+
+.ordernamber a{
+  color: #FF686E;
+}
+
+/* -----希望清單----------- */
+
+/* ----------優惠劵----------- */
+
+/* ------訂單明細------- */
+.listTOP{
+  font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 26px;
   letter-spacing: 0em;
-  margin-left: 25px;
+}
+
+.orderdetaillistPRODUT p{
+  max-width: 50px;
+}
+
+  /* -------上面手機板------------- */
 }

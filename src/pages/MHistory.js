@@ -1,91 +1,71 @@
 import React from 'react'
-
+import {FaDollarSign} from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 function MHistory() {
   return (
-    <div className="container">
-    <div className="row">
-      <div className="col">
-        <div className="memberpage">
-          <div className="member-list-group">
+    <section className="container-fluid px-5 pb-5">
+        <div className="container">
+            <div className="row">
+                <div>
+                    <span className="logout"><button>登出</button></span>
 
-            <a href="/MEdit"
-              className="list-group-item list-group-item-action memberlistgroupitem mb-1">會員資料</a>
-            <a href="/MCoupon"
-              className="list-group-item list-group-item-action memberlistgroupitem mb-1">優惠劵</a>
-            <a href="/MHistory"
-              className="list-group-item list-group-item-action memberlistgroupitem mb-1">訂單紀錄</a>
-            <a href="/MWishlist" className="list-group-item list-group-item-action memberlistgroupitem mb-1">我的收藏</a>
-          </div>
-
-          <div className="memberEditPage">
-            <ol className="memberinfolist ms-3">
-              <li className="list-unstyled h3 me-5"><a href="#">全部</a></li>
-              <li className="list-unstyled h3 me-5"><a href="#">配送中</a></li>
-              <li className="list-unstyled h3 me-5"><a href="#">已完成/取消</a></li>
-            </ol>
-
-            <div className="memberhistory">
-              <div className="">
-
-                <div className="row">
-                  <div className="membercoupontitle">
-                    <div className="title col-2 ">訂單編號</div>
-                    <div className="title col-8">內容</div>
-                    <div className="title col-2">狀態</div>
-                  </div>
+                    <div className="memberlistgroup-sm d-lg-none">
+                    <Link to="/MEdit" className="col memberlistgroupitem">個人資料</Link>
+                    <Link to="/MCoupon" className="col memberlistgroupitem lh-sm">優惠劵</Link>
+                    <Link to="/MHistory" className="col memberlistgroupitem">訂單紀錄</Link>
+                    <Link to="/MWishlist" className="col memberlistgroupitem">我的收藏</Link>
+                    </div>
+                    <div className="memberinfolist d-flex">
+                        <li className="list-unstyled me-1">全部</li>
+                        <li className="list-unstyled me-1">配送中</li>
+                        <li className="list-unstyled me-1">已完成/取消</li>
+                    </div>
                 </div>
 
-                <div className="">
-                  <div className="orderNumber">
-                    <div className="col-2 ordernamber">
-                        <div><a href="#">#o220001</a></div>
+                <div className="memberedit d-flex">
+                    <div className="list-group d-none d-lg-block">
+                    <Link to="/MEdit" className="list-group-item list-group-item-action mb-3">個人資料</Link>
+                    <Link to="/MCoupon" className="list-group-item list-group-item-action mb-3">優惠劵</Link>
+                    <Link to="/MHistory" className="list-group-item list-group-item-action mb-3">訂單紀錄</Link>
+                    <Link to="/MWishlist" className="list-group-item list-group-item-action mb-3">我的收藏</Link>
                     </div>
+                    <div className="container">
+                        <div className="row">
+                            <table className="table info-editgroup orderList align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">訂單編號</th>
+                                        <th scope="col">內容</th>
+                                        <th scope="col">狀態</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" className="ordernamber">
+                                            <div><a href="#/">#1234567</a></div>
+                                        </td>
+                                        <td className="orderdetail justify-content-lg-evenly d-lg-flex ">
+                                            <div className="d-none d-lg-block">2022/10/19(共三件商品)</div>
 
+                                            <img className="orderimg d-none d-lg-block" alt="product"
+                                                src="./images/epik_high__sleepless_.jpg" />
 
-                    <div className="col-8 orderdetail">
-                        <div>2022/03/29</div> 
-                        <div className="orderimg">
-                        <img alt="product" src="/images/epik_high__sleepless_.jpg"/>                       
+                                                <div>{FaDollarSign}3840</div>                                    
+                                                <button className="btn-success d-block">
+                                                    <Link  to="./member-orderdetellist.html"/>查看
+                                                </button>
+                                        </td>
+                                        <td>配送中</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div><i className="fa-solid fa-dollar-sign"></i>3840(共三件商品)</div>
-                        <div><button className="btn-success">查看</button></div>
                     </div>
-
-                    <div className="col-2 MHstatus couponstate">
-                      <div>配送中</div>
-                    </div>
-                  </div>
-                </div> 
-                <div className=" done">
-                  <div className="col orderNumber">
-                    <div className="col-2 ordernamber">
-                        <div><a href="/CheckOrderList.js">#o2200100</a></div>
-                    </div>
-
-
-                    <div className="col-8 orderdetail">
-                        <div>2022/10/19</div> 
-                        <div className="orderimg">
-                        <img alt="product" src="/images/epik_high__sleepless_.jpg"/>                             
-                        </div>
-                        <div><i className="fa-solid fa-dollar-sign"></i>3840(共三件商品)</div>
-                        <div><button className="btn-success">查看</button></div>
-                    </div>
-
-                    <div className="col-2 couponstate">
-                      <div>已完成</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
   )
 }
 

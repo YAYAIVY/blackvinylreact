@@ -7,9 +7,9 @@ import MHistory from "./pages/MHistory";
 import MCoupon from "./pages/MCoupon";
 import MWishlist from "./pages/MWishlist";
 import MPassword from "./pages/MPassword";
-import CheckOrderList from "./components/CheckOrderList";
-
-
+import CheckOrderList from "./pages/CheckOrderList";
+import Footer from "./components/Footer";
+import Comment from "./pages/Comment";
 
 
 function App() {
@@ -18,8 +18,6 @@ function App() {
       <Router>
         <Navbar />
         <Bodybackground />
-        {/* <MEdit/> */}
-        {/* <MCoupon/> */}
         <Routes>
           <Route path="/MEdit" element={<MEdit/>}/>
           <Route path="/MCoupon" element={<MCoupon/>}/>
@@ -27,7 +25,9 @@ function App() {
           <Route path="/MWishlist" element={<MWishlist/>}/>
           <Route path="/MPassword" element={<MPassword/>}/>
           <Route path="/CheckOrderList" element={<CheckOrderList/>}/>
+          <Route path="/Comment" element={<Comment/>}/>
         </Routes>
+        <Footer/>
       </Router>
     </>
 
