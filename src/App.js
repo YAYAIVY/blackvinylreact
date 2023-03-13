@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Bodybackground from "./components/Bodybackground";
 import MEdit from "./pages/MEdit";
 import MHistory from "./pages/MHistory";
 import MCoupon from "./pages/MCoupon";
@@ -17,7 +16,6 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Bodybackground />
         <Routes>
           <Route path="/MEdit" element={<MEdit/>}/>
           <Route path="/MCoupon" element={<MCoupon/>}/>

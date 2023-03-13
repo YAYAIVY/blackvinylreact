@@ -10,27 +10,16 @@ body {
 .mbg {
   width: 100%;
   height: 100%;
-  /* background: url('../public/images/background1.jpeg'); */
-  filter: blur(5px);
+  background: url('../public/img/mimg/background2.jpg');
   background-size: cover;
-  position: relative;
+  background-repeat: no-repeat;
 }
 
-.mbg img {
-  width: 100%;
-  height: 100%;
-}
 
 .memberpage {
   /* 中間全部範圍 */
-  width: 100%;
-  height: auto;
+  display: flex;
   justify-content: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
 }
 
 
@@ -113,7 +102,7 @@ body {
 
 .minfo-editgroup input {
   background-color: rgba(255, 255, 255, 0.4);
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 
@@ -227,7 +216,9 @@ align-items: center;
 
 /* ---------下面開始手機板---------------- */
 @media screen and (max-width: 768px) {
-
+.mbg{
+  height: 1000px;
+}
 
   .memberpage {
     /* 中間全部範圍 */

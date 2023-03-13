@@ -1,9 +1,16 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import {FaDollarSign} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
+
+
+
+
 function MHistory() {
-  return (
+
+
+return (
     <section className="container-fluid px-5 pb-5">
         <div className="container">
             <div className="row">
