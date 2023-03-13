@@ -8,7 +8,7 @@ function MHistory() {
         <div className="container">
             <div className="row">
                 <div>
-                    <span className="logout"><button>登出</button></span>
+                    <span className="mlogout"><button>登出</button></span>
 
                     <div className="memberlistgroup-sm d-lg-none">
                     <Link to="/MEdit" className="col memberlistgroupitem">個人資料</Link>

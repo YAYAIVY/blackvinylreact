@@ -8,17 +8,13 @@ function MWishlist() {
         <div className="container">
             <div className="row">
                 <div>
-                    <span className="logout"><button>登出</button></span>
+                    <span className="mlogout"><button>登出</button></span>
 
                     <div className="memberlistgroup-sm d-lg-none">
                     <Link to="/MEdit" className="col memberlistgroupitem">個人資料</Link>
-                    <Link to="/MCoupon" className="col memberlistgroupitem lh-sm">優惠劵</Link>
+                    <Link to="/MCoupon" className="col memberlistgroupitem">優惠劵</Link>
                     <Link to="/MHistory" className="col memberlistgroupitem">訂單紀錄</Link>
                     <Link to="/MWishlist" className="col memberlistgroupitem">我的收藏</Link>
-                    </div>
-                    
-                    <div className="memberinfolist d-flex">
-                        <li className="list-unstyled me-1">全選加入</li>
                     </div>
                 </div>
 
@@ -31,18 +27,22 @@ function MWishlist() {
                     </div>
                     <div className="container">
                         <div className="row">
+                                            
+                    <div className="memberinfolist d-flex">
+                        <li className="list-unstyled me-1">全選加入</li>
+                    </div>
                             <table className="table info-editgroup orderList align-middle">
                                 <thead>
                                     <tr>
-                                        <th scope="col">加入時間</th>
-                                        <th scope="col">商品明細</th>
-                                        <th scope="col">加入購物車</th>
-                                        <th scope="col">刪除商品</th>
+                                        <th className="col">加入時間</th>
+                                        <th className="col">商品明細</th>
+                                        <th className="col">加入購物車</th>
+                                        <th className="col">刪除商品</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row" className="ordernamber">
+                                        <td className="ordernamber">
                                             <div><a href="#/">2022/10/19</a></div>
                                         </td>
                                         <td className="orderdetail justify-content-lg-evenly d-lg-flex ">
@@ -50,10 +50,10 @@ function MWishlist() {
                                                 src="./images/epik_high__sleepless_.jpg" />
                                                 <div className="productdetail d-none d-lg-block">EPIK HIGH Sleepless In___________(white
                                                   vinyl)EPIK HIGH Sleepless In___________(white vinyl)</div> 
-                                                  <div className="productdetailprice ">{FaDollarSign}3840</div>
+                                                  <div className="productdetailprice "><FaDollarSign/>3840</div>
                                         </td>
-                                        <td >{FaShoppingBag}</td>
-                                        <td> {FaTrashAlt}</td>
+                                        <td ><FaShoppingBag/></td>
+                                        <td> <FaTrashAlt/></td>
                                     </tr>
                                 </tbody>
                             </table>

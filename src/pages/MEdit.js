@@ -17,42 +17,43 @@ function MEdit() {
     <div className="container memberpage">
         <div className="row">
             <div>
-                <span className="logout"><button>登出</button></span>
+                <span className="mlogout"><button className=" mb-3 h4">登出</button></span>
 
                 <div className="memberlistgroup-sm d-lg-none">
-                    <Link to="/MEdit" className="col memberlistgroupitem">個人資料</Link>
-                    <Link to="/MCoupon" className="col memberlistgroupitem lh-sm">優惠劵</Link>
-                    <Link to="/MHistory" className="col memberlistgroupitem">訂單紀錄</Link>
-                    <Link to="/MWishlist" className="col memberlistgroupitem">我的收藏</Link>
-                </div>
-                <div className="memberinfolist">
-                    <Link to="/MEdit">編輯資料</Link>
-                    <Link to="/MPassword">設定密碼</Link>
+                    <Link to="/MEdit" className="col memberlistgroupitem h3">個人資料</Link>
+                    <Link to="/MCoupon" className="col memberlistgroupitem h3">優惠劵</Link>
+                    <Link to="/MHistory" className="col memberlistgroupitem h3">訂單紀錄</Link>
+                    <Link to="/MWishlist" className="col memberlistgroupitem h3">我的收藏</Link>
                 </div>
             </div>
 
-            <div className="memberedit d-flex">
-                <div className="list-group d-none d-lg-block">
-                    <Link to="/MEdit" className="list-group-item list-group-item-action mb-3">個人資料</Link>
-                    <Link to="/MCoupon" className="list-group-item list-group-item-action mb-3">優惠劵</Link>
-                    <Link to="/MHistory" className="list-group-item list-group-item-action mb-3">訂單紀錄</Link>
-                    <Link to="/MWishlist" className="list-group-item list-group-item-action mb-3">我的收藏</Link>
+            <div className="memberedit  d-flex">
+                <div className="list-group mlistgroup d-none d-lg-block">
+                    <Link to="/MEdit" className="list-group-item list-group-item-action mb-3 h3">個人資料</Link>
+                    <Link to="/MCoupon" className="list-group-item  list-group-item-action mb-3 h3">優惠劵</Link>
+                    <Link to="/MHistory" className="list-group-item list-group-item-action mb-3 h3">訂單紀錄</Link>
+                    <Link to="/MWishlist" className="list-group-item list-group-item-action mb-3 h3">我的收藏</Link>
                 </div>
                 <div className="container ">
                     <div className="row">
-                        <form className="d-lg-flex info-editgroup justify-content-center">
-                            <div className="px-4  myCard">
-                                <div className="img-warp">
-                                    <img src="./images/vinyl131301.jpg" alt="" className="" />
+
+                    <div className="memberinfolist h3">
+                    <Link to="/MEdit" className="me-3 mb-3">編輯資料</Link>
+                    <Link to="/MPassword" className="me-3 mb-3 ">設定密碼</Link>
+                    </div>
+                       <form className="d-lg-flex minfo-editgroup justify-content-center">
+                            <div className="px-4  mmyCard">
+                                <div className="mimg-warp">
+                                    <img src="./images/vinyl131301.jpg" alt="" />
                                 </div>
-                                <div className="justify-content-sm-start">
-                                    <h5>會員名稱</h5>
-                                    <span className="memberlevel">會員等級</span>
+                                <div className=" justify-content-sm-start m-sm-0">
+                                    <h3>會員名稱</h3>
+                                    <span className="h6 memberlevel">會員等級</span>
                                 </div>
                             </div>
                             <div>
-                                <div>
-                                    <p>{FaEdit}編輯會員資料</p>
+                                <div className='h6'>
+                                    <FaEdit/>編輯會員資料
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="name" className="form-label">姓名</label>

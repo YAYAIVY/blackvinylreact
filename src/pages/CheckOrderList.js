@@ -8,7 +8,7 @@ function CheckOrderList() {
             <div className="container">
                 <div className="row">
                     <div>
-                        <span className="logout"><button><Link to="./MHistory">返回</Link></button></span>
+                        <span className="mlogout"><button><Link to="./MHistory">返回</Link></button></span>
                         <div className="container orderdetaillistpage">
                             <div className="row">
                                 <div className="d-flex justify-content-between sm-h4 h2 listTOP">
