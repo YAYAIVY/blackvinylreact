@@ -1,1 +1,49 @@
-     
+                              <table className="table mb-3">
+                <thead>
+                  <tr>
+                    <th scope="col" className="d-none d-lg-block">產品</th>
+                    <th scope="col">名稱</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">金額</th>
+                  </tr>
+                </thead>
+                <tbody className="orderdetaillistPRODUT">
+                  <tr>
+                    <td className="d-none d-lg-block d-md-block">
+                      <img className="orderimg " src="./images/epikhigh_shoebox.jpg" alt="" />
+                    </td>
+                    <td className="align-middle">
+                      <p className="d-block text-truncate" style={{maxwidth: "50px"}}>
+                        EPIK HIGH
+                        SleeplessIn___________(whitevinyl)EPIK
+                        HIGH Sleepless
+                        In___________(white
+                        vinyl)
+                      </p>
+                    </td>
+                    <td className="align-middle">
+                      1
+                    </td>
+                    <td className="align-middle">
+                    <FaDollarSign/>3840
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot></tfoot>
+              </table>
+              {/* 評論五星 */}
+              <div className="start justify-content-center">
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaRegStar/>
+                <FaRegStar/>
+              </div>
+              <div className="writecomment d-flex align-items-center">
+                <textarea name="comment" className="comment me-3 mb-3" id="comment" placeholder="留下您的評論" cols="65"
+                  rows="5"></textarea>
+                  <button className="btn-success ">
+                    評價
+                  </button>
+               
+              </div>

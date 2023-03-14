@@ -6,22 +6,23 @@ import { Link } from 'react-router-dom'
 function MEdit() {
 
   return (
-    <section className="container-fluid px-5 pb-5">
+    <section className="container-fluid mbg px-5 pb-5">
       <div className="container memberpage">
         <div className="row">
           <div>
             <span className="mlogout"><button className=" mb-3 h4">登出</button></span>
-
             <div className="memberlistgroup-sm d-lg-none">
-              <Link to="/MEdit" className="col memberlistgroupitem h3">個人資料</Link>
-              <Link to="/MCoupon" className="col memberlistgroupitem h3">優惠劵</Link>
-              <Link to="/MHistory" className="col memberlistgroupitem h3">訂單紀錄</Link>
-              <Link to="/MWishlist" className="col memberlistgroupitem h3">我的收藏</Link>
-            </div>
+                        {/* 手機版上四分類 */}
+                            <Link to="/MEdit" className="col memberlistgroupitem h3">個人資料</Link>
+                            <Link to="/MCoupon" className="col memberlistgroupitem h3">優惠劵</Link>
+                            <Link to="/MHistory" className="col memberlistgroupitem h3">訂單紀錄</Link>
+                            <Link to="/MWishlist" className="col memberlistgroupitem h3">我的收藏</Link>
+                        </div>
           </div>
 
           <div className="memberedit  d-flex">
-            <div className="list-group mlistgroup d-none d-lg-block">
+          <div className="list-group d-none d-lg-block">
+                    {/* 網頁版左四分類 */}
               <Link to="/MEdit" className="list-group-item list-group-item-action mb-3 h3">個人資料</Link>
               <Link to="/MCoupon" className="list-group-item  list-group-item-action mb-3 h3">優惠劵</Link>
               <Link to="/MHistory" className="list-group-item list-group-item-action mb-3 h3">訂單紀錄</Link>
@@ -38,7 +39,7 @@ function MEdit() {
                   <div className='h6'>
                     <FaEdit />編輯密碼
                   </div>
-                  <div className="usereditpassword d-flex mb-3 ">
+                  <div className="usereditpassword d-flex justify-content-center mb-3 ">
                     <label for="password"><FaKey /></label>
                     <input
                       type="password"
@@ -46,14 +47,14 @@ function MEdit() {
                     />
                   </div>
 
-                  <div className="usereditpassword d-flex mb-3">
+                  <div className="usereditpassword d-flex justify-content-center mb-3">
                     <label for="password"><FaKey /></label>
                     <input
                       type="password"
                       placeholder="新密碼(至少8個字元)"
                     />
                   </div>
-                  <div className="usereditpassword d-flex mb-6">
+                  <div className="usereditpassword justify-content-center d-flex mb-6">
                     <label for="password"><FaKey /></label>
                     <input
                       type="password"
@@ -61,8 +62,8 @@ function MEdit() {
                     />
                   </div>
 
-                  <div className="passwordeditSave ">
-                    <button className="btn-success mb-3">
+                  <div className="passwordeditSave d-flex justify-content-center">
+                    <button className="btn-success   mb-3">
                       更新密碼
                     </button>
                   </div>

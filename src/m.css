@@ -24,7 +24,7 @@ body {
 
 
 
-.mlistgroup a {
+.memberedit .list-group a {
   width: 150px;
   border: #7D7D7D solid 1px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -40,14 +40,24 @@ body {
 }
 
 
-.memberlistgroupitem  {
+.memberlistgroupitem {
+  /* 四大分類 */
   color: rgba(255, 255, 255, 0.3);
   border-bottom: #7D7D7D solid 1px;
   /* 調整影響文字亮度勿改 */
   margin-bottom: 10px;
 }
 
-.memberinfolist a:hover {
+.memberinfolist a{
+  border-bottom: rgba(255, 255, 255, 0.3)  solid 1px;
+}
+.memberinfolist li{
+  color: #ffffff;
+  border-bottom: rgba(255, 255, 255, 0.3)  solid 1px;
+}
+
+
+.memberinfolist a,li:hover {
   color: #ffffff;
   border-bottom: #ffffff solid 1px;
 }
@@ -85,6 +95,8 @@ body {
   /* 霧面編輯區塊 */
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.3);
+  
+  align-items: center;
   justify-content:start;
   font-size: 21px;
   font-weight: 900;
@@ -107,12 +119,23 @@ body {
 
 
 /* -------密碼---------- */
-.passwordeditSave button{
+.usereditpassword{
+  justify-content: center;
+} 
+.passwordeditSave button{ 
   width: 50%;
+  text-align: center;
 }
 
 
 /* ------歷史訂單---------- */
+.memberinfolist{
+  /* h3 */
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 41px;
+  letter-spacing: 0em;
+}
 
 .memberinfolist li{
   color: rgba(255, 255, 255, 0.3);
@@ -123,25 +146,21 @@ body {
   color: #ffffff;
 }
 
-th,td{
+.minfo-editgroup th,td{
   border:1px #FFFFFF dotted;
   padding-left: 1px;
+  text-align: center;
 }
 
-tr:hover{
+.minfo-editgroup tr:hover{
   background-color: rgba(255, 255, 255);
   color: #000;
 }
 
 
-.orderList{
-  align-items: center;
-}
-
 .ordernamber a{
   color: #FF686E;
 }
-
 
 
 .orderdetail{
@@ -150,7 +169,6 @@ tr:hover{
 }
 .orderimg{
   width: 100px;
-
 }
 
 
@@ -159,20 +177,10 @@ tr:hover{
 .productdetail{
   /* display: -webkit-box;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   white-space: normal;
-  overflow: hidden; */
-}
-
-.productdetailprice{
-align-items: center;
-}
-
-.wishicon{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;  */
 }
 
 .wishicon:hover{
@@ -193,15 +201,31 @@ align-items: center;
 /* ------訂單明細---------- */
 .orderdetaillistpage {
   background-color: rgba(255, 255, 255, 0.9);
+  
 }
 
+.listTOP{
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 55px;
+  letter-spacing: 0em;
+}
 .listcontent2{
+  background-color:  #E0DDD3;
+  white-space: nowrap
+}
+.listcontent2 th,td{
+text-align: start;
+}
+
+.listcontent3{
   background-color: #ffffff;
 }
 
-.listcontent2{
-  background-color:  #E0DDD3;
-}
+
 
 /* -----評論--------- */
 
@@ -236,13 +260,13 @@ align-items: center;
   .memberlistgroup-sm a {
     /* 上方四個大類 */
     color: rgba(255, 255, 255, 0.3);
-    border-bottom: #7D7D7D solid 1px;
+    /* border-bottom: #7D7D7D solid 1px; */
     /* 調整影響文字亮度勿改 */
   }
 
   .memberlistgroup-sm a:hover {
     color: #ffffff;
-    border-bottom: #ffffff solid 1px;
+    /* border-bottom: #ffffff solid 1px; */
   }
 
   .memberinfolist {
@@ -250,6 +274,7 @@ align-items: center;
     padding-left: 0;
     text-align: start;
     margin: 10px 0px;
+    font-size: calc(1.275rem + 0.3vw);
   }
 
   .memberinfolist a {
@@ -287,7 +312,7 @@ align-items: center;
     margin-bottom: 5px;
   }
 
-  label,
+  .minfo-editgroup label,
   input {
     display: block;
     color: #ffffff;
@@ -295,10 +320,10 @@ align-items: center;
 
   }
 
-  input,
+  .minfo-editgroup input,
   select {
     background-color: rgba(255, 255, 255, 0.4);
-    color: #ffffff;
+    /* color: #ffffff; */
     margin-bottom: 10px;
   }
 
@@ -308,10 +333,6 @@ align-items: center;
 
   }
 
-  /* .editSave{
-  text-align: end;
-  margin-bottom: 10px;
-} */
 
   /* -----密碼------ */
   .usereditpassword {
@@ -345,14 +366,29 @@ color: rgba(255, 255, 255, 0.3);
 
 /* ------訂單明細------- */
 .listTOP{
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin-bottom: 25px;
+}
+
+.orderdetaillist{
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0em;
 }
 
-.orderdetaillistPRODUT p{
-  max-width: 50px;
+.orderdetaillisttext {
+  /* 產品文字 */
+  overflow: hidden;
+}
+
+
+/* -------評論--------- */
+.writecomment textarea{
+  height:100px
 }
 
   /* -------上面手機板------------- */
