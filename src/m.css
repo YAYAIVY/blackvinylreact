@@ -294,6 +294,7 @@ text-align: start;
 
   .memberlistgroup-sm a {
     /* 上方四個大類 */
+    width: 100%;
     color: rgba(255, 255, 255, 0.3);
     /* border-bottom: #7D7D7D solid 1px; */
     /* 調整影響文字亮度勿改 */
@@ -325,7 +326,9 @@ text-align: start;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.3);
   }
-
+.mainh{
+  width: 100%;
+}
 
   /* -------手機會員編輯區--------- */
 

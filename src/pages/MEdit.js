@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ML4page from "../components/ML4page";
 import MMEdit from "../components/MMEdit";
 import { Link } from "react-router-dom";
 
 function MEdit() {
+
+
+
+    useEffect(()=>{
+
+
+
+
+    },[])
+
+
+
+
     return (
         <section className="container-fluid mbg px-5 pb-5 ">
             <div className="container memberpage">

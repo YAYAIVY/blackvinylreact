@@ -1,10 +1,54 @@
-import React from 'react'
+import React, { useEffect,useState } from 'react'
 import { Link } from 'react-router-dom'
 import ML4page from "../components/ML4page";
 import MMCoupon from "../components/MMCoupon";
+import { COUPONLIST } from '../components/api_config';
+import {FaDollarSign} from "react-icons/fa"
     
 function MCoupon() {
-  return (
+
+
+const [couponlist,setCouponlist]=useState({
+    //資料設定預設0
+page: 0,
+perPage: 10,
+rows: [],
+totalPages: 0,
+totalRows: 0,
+})
+
+
+
+ //抓資料
+const getCouponData =async()=>{
+    const r = await fetch(COUPONLIST);
+    const json = await r.json();
+    console.log(json);
+    setCouponlist(json);
+}
+
+//按按紐才發送的不要放在useEffect
+//一進來就要拿到資料就放在useEffect
+useEffect(()=>{
+//設定功能
+
+    getCouponData();
+
+
+return()=>{
+//解除功能
+
+
+}
+
+
+
+},[])
+
+
+
+
+    return (
     <section className="container-fluid mbg px-5 pb-5 ">
     <div className="container memberpage">
         <div className="row">
@@ -43,13 +87,13 @@ function MCoupon() {
             </div>
             <div className="memberedit  d-flex">
             <ML4page/> 
-            <MMCoupon/>
+            <MMCoupon rows={couponlist.rows}/>
             </div>
         </div>
     </div>
 
 </section>
-  )
+)
 }
 
 export default MCoupon
