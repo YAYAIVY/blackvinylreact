@@ -12,7 +12,7 @@ function MComment() {
                 </div>
                 <div className="row">
                     <span className="mlogout">
-                        <button className="btn-info mb-5">
+                        <button className="btn-info h4 mb-5">
                             <Link to="./MHistory">返回</Link>
                         </button>
                     </span>

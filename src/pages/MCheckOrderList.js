@@ -10,6 +10,7 @@ function MCheckOrderList() {
                     <div>訂單#123456789明細</div>
                     <div>已完成</div>
                 </div>
+                
                 <div className="row">
                     <span className="mlogout">
                         <button className="btn-info mb-5">
@@ -67,7 +68,7 @@ function MCheckOrderList() {
                         <tr>
                             <td className=" col d-none d-lg-block">
                                 <img className="orderimg "
-                                    src="/public/img/mimg/member2.jpg" alt="產品圖" />
+                                    src="/img/mimg/member2.jpg" alt="產品圖" />
                             </td>
                             <td>
                                 <h5 className="orderdetaillisttext" >
