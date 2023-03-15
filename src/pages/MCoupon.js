@@ -4,6 +4,7 @@ import ML4page from "../components/ML4page";
 import MMCoupon from "../components/MMCoupon";
 import { COUPONLIST } from '../components/api_config';
 import {FaDollarSign} from "react-icons/fa"
+import axios from 'axios';
     
 function MCoupon() {
 
@@ -20,12 +21,36 @@ totalRows: 0,
 
 
  //抓資料
-const getCouponData =async()=>{
+const getCouponData =async(page=1)=>{
+  
+
+    // const response = await axios.get(COUPONLIST,{
+    //     params:{
+    //         page
+    //     }
+    // });
+    // setCouponlist(response.couponlist)
+
     const r = await fetch(COUPONLIST);
     const json = await r.json();
     console.log(json);
     setCouponlist(json);
+
 }
+//刪除
+// const removeItem =async (itemId=0)=>{
+//     if(!(+itemId)){
+//         return;
+//     }
+//     const response = await axios.delete(COUDELETE+'/'+ itemId);
+//     console.log(response.data);
+//     getCouponData()
+// }
+
+
+
+
+
 
 //按按紐才發送的不要放在useEffect
 //一進來就要拿到資料就放在useEffect
@@ -37,15 +62,9 @@ useEffect(()=>{
 
 return()=>{
 //解除功能
-
-
 }
 
-
-
 },[])
-
-
 
 
     return (

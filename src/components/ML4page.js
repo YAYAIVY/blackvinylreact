@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function ML4page() {
 
   return ( 
-    <div className="list-group d-none d-lg-block">
+    <div className="list-group d-none d-lg-block ">
      {/* 網頁版左四分類 */} 
     <Link to="/MEdit" className="list-group-item list-group-item-action mb-3 h3">個人資料</Link>
     <Link to="/MCoupon" className="list-group-item  list-group-item-action mb-3 h3">優惠劵</Link>
